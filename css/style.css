@@ -5,7 +5,7 @@
 html,
 body {
   margin: 0;
-  font-familiy: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-display: optional;
   color: #333;
   background: #fff;
@@ -14,7 +14,8 @@ body {
 
 .landing {
   position: relative;
-  background-image: url('https://images.unsplash.com/photo-1493957988430-a5f2e15f39a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+  /*background-image: url('https://images.unsplash.com/photo-1493957988430-a5f2e15f39a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');*/
+
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -77,42 +78,34 @@ body {
 
 @media(max-width: 650px) {
   .landing img {
-    width: 70%;
+    width: 20%;
   }
-  
+
   .landing h1 {
     font-size: 35px;
-    padding-top: 5rem;
+
   }
-  
+
   .landing h2 {
     font-size: 25px;
   }
-    
+
   .countdown {
     font-size: 25px;
     flex-direction: column;
   }
-  
+
   .countdown div {
     display: none;
   }
-  
+
   .countdown div:first-child {
     display: block;
     width: 80%;
     padding: 10px;
-    margin-bottom: 2rem;
-  }
-  
-  .landing p {
-    margin-top: 2rem;
-  }
-  
-}
 
-@media(max-height: 600px){
-  img {
-    width: 20%;
   }
+
+
+
 }

@@ -1,4 +1,4 @@
-onst countdown = document.querySelector('.countdown');
+const countdown = document.querySelector('.countdown');
 
 //Set Launch Date
 const launchDate = new Date('Nov 1, 2019 13:00:00').getTime();
@@ -7,16 +7,16 @@ const launchDate = new Date('Nov 1, 2019 13:00:00').getTime();
 const intvl = setInterval(() => {
   //Get today's date and time
   const now = new Date().getTime();
-  
+
   //Distance between now and target date
   const distance = launchDate - now;
-  
+
   //Calculations
   const days = Math.floor(distance / (1000 * 60 * 60 * 24));
   const hours = Math.floor((distance % (1000 * 60 * 60 *24)) / (1000 * 60 * 60));
   const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
+
   //display results
   countdown.innerHTML = `
     <div>${days}<span>Days</span></div>
@@ -24,7 +24,7 @@ const intvl = setInterval(() => {
     <div>${mins}<span>Minutes</span></div>
     <div>${seconds}<span>Seconds</span></div>
   `;
-  
+
   //Past launch date?
   if(distance <0) {
     //Stop countdown
